@@ -11,7 +11,7 @@ let app = express();
 var port = process.env.port || 8080;
 
 // // Send Message for default URL
-app.get('/', (req, res) => res.send('Welcome to Node API'));
+app.get('/', (req, res) => res.send('Welcome to Node API with Nodemon'));
 
 // Use API routes in the app
 app.use('/api', apiRoutes);
