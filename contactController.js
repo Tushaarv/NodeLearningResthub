@@ -42,7 +42,7 @@ exports.new = function(req, res) {
 
 // Handle View Contact Info
 exports.view = function(req, res) {
-    contact.findById(req.params.contact_id, function(err, contact){
+    Contact.findById(req.params.contact_id, function(err, contact){
         if (err)
             res.json(err);
         res.json({
